@@ -1,0 +1,305 @@
+html{
+    /* Primary */
+    height: 100%;
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    
+
+}
+body{
+    background-color: var(--Light-Grayish-Magenta);
+    min-height: 100%;
+    width:100%;
+    font-size:15px;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+
+}
+h3{
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+}
+
+.contenedor-contenido-servicios{
+    max-width: 1600px;
+    height: 650px;
+    margin:50px;
+    background: url("../images/bg-pattern-top-desktop.svg") top left no-repeat,url("../images/bg-pattern-bottom-desktop.svg") bottom right no-repeat,white;
+    background-size: 500px 300px , 800px 600px;
+    display:flex;
+}
+@media(max-width:375px){
+    .contenedor-contenido-servicios{
+        background-size: 200px 200px, 200px 200px;
+    }
+}
+
+.contenido-servicios{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+
+    display:flex;
+    flex-direction: column;
+
+  
+}
+@media(max-width:900px){
+    .contenido-servicios{
+        width: 90%;
+        row-gap: 40px;
+    }
+    .contenedor-contenido-servicios{
+        max-width: 900px;
+        height: auto;
+        flex-direction: column;
+        
+    }
+}
+.contenedor-seccion-1-servicios{
+    display:flex;
+    height: 55%;
+    column-gap: 10%;   
+    justify-content: center;
+}
+@media(max-width:900px){
+    .contenedor-seccion-1-servicios{
+        justify-content: center;
+        align-items: center;
+    }
+}
+.contenedor-seccion-2-servicios{
+    margin:auto;
+    display:flex;
+    column-gap: 20px;
+    height: 40%;
+    width: 100%;
+    justify-content: center;
+}
+@media(max-width:900px){
+    .contenedor-seccion-1-servicios,
+    .contenedor-seccion-2-servicios
+    {  
+        row-gap: 10px;
+        height: auto;
+        column-gap:auto;
+        flex-direction: column;
+        height:auto;
+    }
+    .contenedor-seccion-1-servicios p{
+        font-size:13px;
+        line-height: 15px;
+    }
+    .contenedor-seccion-2-servicios{
+        margin-bottom: 50px;
+    }
+    
+}
+.opinion-general{
+    max-width: 280px;
+}
+@media(max-width:900px){
+    .opinion-general{
+        margin: 50px auto auto auto;
+    }
+}
+.opinion-general h1{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color:var(--Very-Dark-Magenta);
+}
+@media(max-width:900px){
+    .opinion-general h1{
+        font-size: 24px;
+        text-align: center;
+    }
+}
+.opinion-general p{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    color:var(--Dark-Grayish-Magenta);
+    
+}
+@media(max-width:900px){
+    .opinion-general p{
+        text-align: center;
+    }
+}
+.calificacion-estrellas{
+    margin: 50px 0 0 0;
+    width: 600px;
+    display:flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+@media(max-width:900px){
+    .calificacion-estrellas{
+        max-width:315px;
+        display:flex;
+        margin: auto; 
+        width:100%;
+        text-align: center;
+        
+    }
+}
+.enlinea{
+    display:inline;
+}
+.tamaño-estrella{
+    width:12px;
+    height:12px;
+    margin-left: 5px;
+}
+.calificacion-estrellas p{
+    margin-left:10px;
+    font-family: 'League Spartan', sans-serif;
+    color:var(--Very-Dark-Magenta);
+    font-weight: bold;
+
+}
+@media(max-width:900px){
+    .calificacion-estrellas{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width:1008px) and (min-width:900px){
+    .conjunto-estrellas{
+        width: 70%;
+        text-align: center;
+    }
+}
+
+
+.estrellas{
+    background-color: var(--Light-Grayish-Magenta);
+    padding:0px 50px 0px 25px;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+}
+
+@media(max-width:900px){
+    .estrellas{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding:15px;
+        row-gap: 5px;
+        
+    }
+    .calificacion-estrellas p{
+        margin:0;
+        font-size:13px;
+    }
+
+}
+
+.estrellas-review{
+    align-self:flex-start;
+}
+
+.estrellas-report-guru{
+    align-self:center;
+}
+.estrellas-besttech{
+    align-self: flex-end;
+}
+
+.comentario{
+    background-color: var(--Very-Dark-Magenta);
+    max-width: 315px;
+    max-height:188px;
+    padding:30px 20px 30px 30px;
+    border-radius: 8px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    color:var(--White);
+    font-size:14px;
+}
+@media(max-width:900px){
+    .comentario{
+        max-height: none;
+    }
+}
+.comentario p{
+    line-height: 15px;
+}
+.comentario h3, 
+.vendedor-verificado{
+    margin-block-end: 0.2em;
+    margin-block-start: 0.2em;
+    font-size:14px;
+}
+
+.vendedor-verificado{
+    color:var(--Soft-Pink);
+}
+
+.icono-comentario{
+    width:32px ;
+    height: 32px;
+    border-radius: 50%;
+}
+.contenedor-icono-comentarista{
+    display:flex;
+    column-gap: 20px;
+}
+.comentario:nth-child(1){
+    align-self: flex-start;
+}
+.comentario:nth-child(2){
+    align-self: center;
+}
+.comentario:nth-child(3){
+    align-self: flex-end;
+}
+@media(max-width:900px){
+
+    .comentario:nth-child(1){
+        align-self: center;
+    }
+    .comentario:nth-child(2){
+        align-self: center;
+    }
+    .comentario:nth-child(3){
+        align-self: center;
+    }
+}
+@media(max-width:1100px) and (min-width:900px){
+    .contenedor-seccion-2-servicios{
+        height: 50%;
+    }
+    .comentario{
+        height: 218px;
+        max-height: none;
+    }
+    .comentario:nth-child(1){
+        align-self: center;
+    }
+    .comentario:nth-child(2){
+        align-self: center;
+    }
+    .comentario:nth-child(3){
+        align-self: center;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
